@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<form action="upload_file.php" method="post"
+<form action="upload_file_v2.php" method="post"
 enctype="multipart/form-data">
 <select name="stuid">
     <option value="0">select number:</option>
