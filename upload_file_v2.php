@@ -46,7 +46,7 @@ if (($_FILES["file"]["type"] == "image/gif")
       }
     else
       {
-         $uploadDir = './upload/';
+         $uploadDir = 'upload/';
          $uploadFile = $uploadDir . basename($_FILES['file']['name']);
          $remote_name = $_FILES['file']['name'];
          $remote_url = 'http://183.24.43.21:8080/upload';
