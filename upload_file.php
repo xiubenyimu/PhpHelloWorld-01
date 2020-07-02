@@ -3,12 +3,12 @@
 || ($_FILES["file"]["type"] == "image/jpeg")
 || ($_FILES["file"]["type"] == "image/pjpeg"))
 && ($_FILES["file"]["size"] < 20000))
-  */
+  *//*
 if (($_FILES["file"]["type"] == "image/gif")
 || ($_FILES["file"]["type"] == "image/jpeg")
 || ($_FILES["file"]["type"] == "image/pjpeg")
 )
-  {
+  {*/
   if ($_FILES["file"]["error"] > 0)
     {
     echo "Return Code: " . $_FILES["file"]["error"] . "<br />";
@@ -31,7 +31,7 @@ if (($_FILES["file"]["type"] == "image/gif")
       echo "Stored in: " . "upload/" . $_FILES["file"]["name"];
       }
     }
-  }
+/*  }
 else
   {
   echo "Invalid file";
@@ -39,5 +39,5 @@ else
     echo "Type: " . $_FILES["file"]["type"] . "<br />";
     echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
     echo "Stored in: " . $_FILES["file"]["tmp_name"];
-  }
+  }*/
 ?>
