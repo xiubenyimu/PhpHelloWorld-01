@@ -29,6 +29,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
   }
 else
   {
-  echo "Invalid file" $_FILES["file"]["type"];
+  $ftype=$_FILES["file"]["type"]
+  echo "Invalid file $ftype";
   }
 ?>
