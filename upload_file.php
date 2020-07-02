@@ -32,7 +32,7 @@ else
   $ftype=$_FILES["file"]["type"];
   $fsize=$_FILES["file"]["size"];
   echo "Invalid file";
-  echo $ftype;
+  /*echo $ftype;*/
   echo $fsize;
   }
 ?>
