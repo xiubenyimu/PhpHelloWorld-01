@@ -29,10 +29,10 @@ if ((($_FILES["file"]["type"] == "image/gif")
   }
 else
   {
-  $ftype=$_FILES["file"]["type"];
-  $fsize=$_FILES["file"]["size"];
   echo "Invalid file";
-  echo "ftype";
-  echo "fsize";
+  echo "Upload: " . $_FILES["file"]["name"] . "<br />";
+    echo "Type: " . $_FILES["file"]["type"] . "<br />";
+    echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
+    echo "Stored in: " . $_FILES["file"]["tmp_name"];
   }
 ?>
