@@ -8,9 +8,9 @@ enctype="multipart/form-data">
     <option value="1">001</option>
     <option value="2">002</option>
     <option value="3">003</option>
-    </select>
-<label for="file">文件名:</label>
-<input type="file" name="file" id="file" /> 
+    </select><br>
+<label for="file">文件名:</label><br>
+<input type="file" name="file" id="file" /> <br>
 <input type="date" name="date" />
 <br />
 <input type="submit" name="submit" value="Submit" />
