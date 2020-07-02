@@ -1,8 +1,13 @@
 <?php
-if ((($_FILES["file"]["type"] == "image/gif")
+/*if ((($_FILES["file"]["type"] == "image/gif")
 || ($_FILES["file"]["type"] == "image/jpeg")
 || ($_FILES["file"]["type"] == "image/pjpeg"))
 && ($_FILES["file"]["size"] < 20000))
+  */
+if (($_FILES["file"]["type"] == "image/gif")
+|| ($_FILES["file"]["type"] == "image/jpeg")
+|| ($_FILES["file"]["type"] == "image/pjpeg")
+)
   {
   if ($_FILES["file"]["error"] > 0)
     {
