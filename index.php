@@ -9,7 +9,7 @@ enctype="multipart/form-data">
     <option value="2">002</option>
     <option value="3">003</option>
     </select><br>
-<label for="file">文件名:</label><br>
+<label for="file">文件名1:</label><br>
 <input type="file" name="file" id="file" /> <br>
 <input type="date" name="date" />
 <br />
