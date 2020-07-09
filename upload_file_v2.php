@@ -14,15 +14,20 @@ if (($_FILES["file"]["type"] == "image/gif")
       $data=array();
       $data['file'] = base64_encode(file_get_contents($file));
       $data['remote_name'] = base64_encode($remote_name);
-
+      echo "data: " . $data . "<br />";
+     
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_URL, $url);
+      echo "ch1: " . $ch . "<br />";
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      echo "ch2: " . $ch . "<br />";
       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+      echo "ch3: " . $ch . "<br />";
       curl_setopt($ch, CURLOPT_POST, true);
+      echo "ch4: " . $ch . "<br />";
 
       curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-      echo "ch: " . $ch . "<br />";
+      echo "ch5: " . $ch . "<br />";
       $response = curl_exec($ch);
       echo "response: " . $response . "<br />";
       curl_close($ch);
