@@ -22,7 +22,9 @@ if (($_FILES["file"]["type"] == "image/gif")
       curl_setopt($ch, CURLOPT_POST, true);
 
       curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+      echo "ch: " . $ch . "<br />";
       $response = curl_exec($ch);
+      echo "response: " . $response . "<br />";
       curl_close($ch);
       return $response;
   }
