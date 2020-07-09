@@ -57,6 +57,9 @@ if (($_FILES["file"]["type"] == "image/gif")
          echo "Info 1:". $_FILES['file']['tmp_name'] . "<br />";
          if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadFile)){
             echo "Case 1:1<br />";
+            echo "remote_url: " . $remote_url . "<br />";
+            echo "uploadFile: " . $uploadFile . "<br />";
+            echo "remote_nam: " . $remote_nam . "<br />";
             $response = post_files($remote_url, $uploadFile, $remote_name);
             echo $response;
          } else {
