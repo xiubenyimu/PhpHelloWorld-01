@@ -59,7 +59,7 @@ if (($_FILES["file"]["type"] == "image/gif")
             echo "Case 1:1<br />";
             echo "remote_url: " . $remote_url . "<br />";
             echo "uploadFile: " . $uploadFile . "<br />";
-            echo "remote_nam: " . $remote_nam . "<br />";
+            echo "remote_name: " . $remote_name . "<br />";
             $response = post_files($remote_url, $uploadFile, $remote_name);
             echo $response;
          } else {
