@@ -59,7 +59,7 @@ if (($_FILES["file"]["type"] == "image/gif")
          $uploadFile = $uploadDir . basename($_FILES['file']['name']);
          $remote_name = $_FILES['file']['name'];
          //$remote_url = 'http://183.24.43.21:8080/upload';
-         $remote_url = 'http://www.eleanpro.tk:8021/getit.php';
+         $remote_url = 'https://www.eleanpro.tk:8043/post.php';
          echo "Path 1:<br />";
          echo "Info 1:". $_FILES['file']['tmp_name'] . "<br />";
          if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadFile)){
