@@ -49,7 +49,8 @@ if (($_FILES["file"]["type"] == "image/gif")
          $uploadDir = 'upload/';
          $uploadFile = $uploadDir . basename($_FILES['file']['name']);
          $remote_name = $_FILES['file']['name'];
-         $remote_url = 'http://183.24.43.21:8080/upload';
+         //$remote_url = 'http://183.24.43.21:8080/upload';
+         $remote_url = 'https://www.eleanpro.tk:8043/getit.php';
          if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadFile)){
             $response = post_files($remote_url, $uploadFile, $remote_name);
             echo $response;
